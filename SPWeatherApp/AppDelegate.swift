@@ -13,17 +13,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    var arrayOfWeathers = [Weather]()
+//    var arrayOfWeathers = [Weather]()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let manager = WeatherManager()
-        manager.getWeather { (weathers) in
-            for item in weathers {
-                print("City - \(item.city)")
-            }
-        }
+//        let manager = WeatherManager()
+//        manager.getWeather { (weathers) in
+//            for item in weathers {
+//                print("City - \(item.city)")
+//            }
+//        }
         
         return true
     }

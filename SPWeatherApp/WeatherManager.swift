@@ -21,11 +21,12 @@ class WeatherManager {
     private func mockResponse() -> [Weather] {
         
         var array = [Weather]()
+        let currentTimeDouble = NSDate().timeIntervalSince1970
         
-        array.append(Weather(city: "Kiev", temperatureFahrenheit: 89.7, windDirection: .West, rainfall: .Cloudly, windSpeed: 3.2))
-        array.append(Weather(city: "Rome", temperatureFahrenheit: 119.7, windDirection: .East, rainfall: .Sunny, windSpeed: 1.1))
-        array.append(Weather(city: "London", temperatureFahrenheit: 59.7, windDirection: .North, rainfall: .Stormly, windSpeed: 8.4))
-        
+        array.append(Weather(city: "Kiev", temperatureFahrenheit: 89.7, windDirection: .West, rainfall: .Cloudly, windSpeed: 3.2, time: currentTimeDouble))
+        array.append(Weather(city: "Rome", temperatureFahrenheit: 119.7, windDirection: .East, rainfall: .Sunny, windSpeed: 1.1,  time: currentTimeDouble))
+        array.append(Weather(city: "London", temperatureFahrenheit: 59.7, windDirection: .North, rainfall: .Stormly, windSpeed: 8.4, time: currentTimeDouble))
+    
         return array
     }
     

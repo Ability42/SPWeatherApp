@@ -18,5 +18,6 @@ struct Weather {
     var windDirection: WindDirection
     var rainfall: Rainfall
     var windSpeed: Float
+    var time: Double
 
 }
