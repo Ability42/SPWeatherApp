@@ -20,6 +20,7 @@
 		78BD68CB1EA3CEEF00BCCA79 /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68CA1EA3CEEF00BCCA79 /* WindDirection.swift */; };
 		78BD68CF1EA3DC7600BCCA79 /* CityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68CE1EA3DC7600BCCA79 /* CityCellViewModel.swift */; };
 		78BD68D31EA4C8A100BCCA79 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68D21EA4C8A100BCCA79 /* MainViewModel.swift */; };
+		78BD68D51EA4CBEA00BCCA79 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68D41EA4CBEA00BCCA79 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		78BD68CA1EA3CEEF00BCCA79 /* WindDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindDirection.swift; sourceTree = "<group>"; };
 		78BD68CE1EA3DC7600BCCA79 /* CityCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCellViewModel.swift; sourceTree = "<group>"; };
 		78BD68D21EA4C8A100BCCA79 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		78BD68D41EA4CBEA00BCCA79 /* DetailsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 		78BD68D11EA4C87C00BCCA79 /* detail */ = {
 			isa = PBXGroup;
 			children = (
+				78BD68D41EA4CBEA00BCCA79 /* DetailsViewModel.swift */,
 			);
 			name = detail;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 				78BD68971EA3CC5B00BCCA79 /* AppDelegate.swift in Sources */,
 				78BD68C91EA3CE9B00BCCA79 /* Rainfall.swift in Sources */,
 				78BD68D31EA4C8A100BCCA79 /* MainViewModel.swift in Sources */,
+				78BD68D51EA4CBEA00BCCA79 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
