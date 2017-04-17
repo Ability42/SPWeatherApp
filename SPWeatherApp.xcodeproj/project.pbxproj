@@ -19,6 +19,7 @@
 		78BD68C91EA3CE9B00BCCA79 /* Rainfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68C81EA3CE9B00BCCA79 /* Rainfall.swift */; };
 		78BD68CB1EA3CEEF00BCCA79 /* WindDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68CA1EA3CEEF00BCCA79 /* WindDirection.swift */; };
 		78BD68CF1EA3DC7600BCCA79 /* CityCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68CE1EA3DC7600BCCA79 /* CityCellViewModel.swift */; };
+		78BD68D31EA4C8A100BCCA79 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78BD68D21EA4C8A100BCCA79 /* MainViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		78BD68C81EA3CE9B00BCCA79 /* Rainfall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rainfall.swift; sourceTree = "<group>"; };
 		78BD68CA1EA3CEEF00BCCA79 /* WindDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindDirection.swift; sourceTree = "<group>"; };
 		78BD68CE1EA3DC7600BCCA79 /* CityCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityCellViewModel.swift; sourceTree = "<group>"; };
+		78BD68D21EA4C8A100BCCA79 /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,9 +153,26 @@
 		78BD68CD1EA3DC1300BCCA79 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
-				78BD68CE1EA3DC7600BCCA79 /* CityCellViewModel.swift */,
+				78BD68D11EA4C87C00BCCA79 /* detail */,
+				78BD68D01EA4C87500BCCA79 /* main */,
 			);
 			name = viewModel;
+			sourceTree = "<group>";
+		};
+		78BD68D01EA4C87500BCCA79 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				78BD68CE1EA3DC7600BCCA79 /* CityCellViewModel.swift */,
+				78BD68D21EA4C8A100BCCA79 /* MainViewModel.swift */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		78BD68D11EA4C87C00BCCA79 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,6 +319,7 @@
 				78BD68991EA3CC5B00BCCA79 /* ViewController.swift in Sources */,
 				78BD68971EA3CC5B00BCCA79 /* AppDelegate.swift in Sources */,
 				78BD68C91EA3CE9B00BCCA79 /* Rainfall.swift in Sources */,
+				78BD68D31EA4C8A100BCCA79 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +568,7 @@
 				78BD68BD1EA3CC5B00BCCA79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78BD68BE1EA3CC5B00BCCA79 /* Build configuration list for PBXNativeTarget "SPWeatherAppTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +577,7 @@
 				78BD68C01EA3CC5B00BCCA79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78BD68C11EA3CC5B00BCCA79 /* Build configuration list for PBXNativeTarget "SPWeatherAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +586,7 @@
 				78BD68C31EA3CC5B00BCCA79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
