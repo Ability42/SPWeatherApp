@@ -12,6 +12,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    let weatherManager = WeatherManager()
+    var startViewModel: MainViewModel!
     
 //    var arrayOfWeathers = [Weather]()
 
@@ -24,6 +26,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //                print("City - \(item.city)")
 //            }
 //        }
+        
+        self.startViewModel = MainViewModel(weatherManager: weatherManager)
+        if let startController = self.window?.rootViewController as? MainViewController {
+            startController.viewModel = startViewModel
+        }
+        
+        
         
         return true
     }

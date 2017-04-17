@@ -6,48 +6,74 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="dRH-id-qkb" customClass="CityTableViewCell" customModule="SPWeatherApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="96" id="dRH-id-qkb" customClass="CityTableViewCell" customModule="SPWeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dRH-id-qkb" id="y6l-x9-XFC">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="70.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="cityLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-hg-inC">
-                        <rect key="frame" x="296" y="25" width="79" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="cityLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-hg-inC">
+                        <rect key="frame" x="270" y="33" width="97" height="29"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tempLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9o-fO-lHG">
-                        <rect key="frame" x="8" y="22" width="102" height="27"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8N-4f-j75">
+                        <rect key="frame" x="316" y="74" width="59" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="a97-YU-tfz"/>
+                            <constraint firstAttribute="height" constant="21" id="kSB-4e-nbE"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="timeLabel">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="10" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="timeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8N-4f-j75">
-                        <rect key="frame" x="308" y="49" width="59" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9o-fO-lHG">
+                        <rect key="frame" x="16" y="32" width="157" height="32"/>
+                        <attributedString key="attributedText">
+                            <fragment content="tempLabel">
+                                <attributes>
+                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="36" name="HelveticaNeue-Thin"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.83706121575342463" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="Q9o-fO-lHG" firstAttribute="top" secondItem="y6l-x9-XFC" secondAttribute="topMargin" constant="24" id="ATg-R3-GGF"/>
+                    <constraint firstItem="v8N-4f-j75" firstAttribute="top" secondItem="4WY-hg-inC" secondAttribute="bottom" constant="12" id="Dph-SX-RtT"/>
+                    <constraint firstItem="4WY-hg-inC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Q9o-fO-lHG" secondAttribute="trailing" constant="64" id="IuI-An-mAZ"/>
+                    <constraint firstAttribute="bottom" secondItem="v8N-4f-j75" secondAttribute="bottom" id="O41-my-b8i"/>
+                    <constraint firstItem="4WY-hg-inC" firstAttribute="top" secondItem="y6l-x9-XFC" secondAttribute="topMargin" constant="25" id="R2p-fb-zga"/>
+                    <constraint firstItem="4WY-hg-inC" firstAttribute="trailing" secondItem="y6l-x9-XFC" secondAttribute="trailingMargin" id="jkE-FH-bgE"/>
+                    <constraint firstItem="Q9o-fO-lHG" firstAttribute="leading" secondItem="y6l-x9-XFC" secondAttribute="leadingMargin" constant="8" id="mIe-2M-SPo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Q9o-fO-lHG" secondAttribute="bottom" constant="24" id="rYr-yw-U9A"/>
+                    <constraint firstAttribute="trailing" secondItem="v8N-4f-j75" secondAttribute="trailing" id="shX-mA-MBn"/>
+                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="cityLabel" destination="4WY-hg-inC" id="cES-w6-Nao"/>
                 <outlet property="temperatureLabel" destination="Q9o-fO-lHG" id="9an-iF-VVP"/>
                 <outlet property="timeLabel" destination="v8N-4f-j75" id="w7S-hp-Ccq"/>
             </connections>
-            <point key="canvasLocation" x="-149.5" y="-2.5"/>
+            <point key="canvasLocation" x="-277.5" y="-42"/>
         </tableViewCell>
     </objects>
 </document>
