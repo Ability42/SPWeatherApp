@@ -13,6 +13,7 @@ class MainViewModel {
     weak var weatherManager: WeatherManager!
     private var weatherArray: [Weather]!
     private var cellsArray = [CityCellViewModel]()
+    var detailsViewModel: DetailsViewModel!
 
     
     required init(weatherManager: WeatherManager) {
@@ -29,6 +30,11 @@ class MainViewModel {
             }
             completion()
         }
+    }
+    
+    func detailsViewModel(index: Int) -> DetailsViewModel {
+        self.detailsViewModel = DetailsViewModel(weather: weatherArray[index])
+        return self.detailsViewModel
     }
     
     
