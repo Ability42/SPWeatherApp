@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dRH-id-qkb" id="y6l-x9-XFC">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="cityLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4WY-hg-inC">
@@ -43,7 +43,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9o-fO-lHG">
-                        <rect key="frame" x="16" y="32" width="157" height="32"/>
+                        <rect key="frame" x="16" y="32" width="157" height="31"/>
                         <attributedString key="attributedText">
                             <fragment content="tempLabel">
                                 <attributes>

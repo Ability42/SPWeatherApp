@@ -18,6 +18,7 @@ class MainViewModel {
     
     required init(weatherManager: WeatherManager) {
         self.weatherManager = weatherManager
+        print("check init")
     }
     
     

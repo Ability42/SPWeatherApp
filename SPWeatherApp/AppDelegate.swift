@@ -14,25 +14,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let weatherManager = WeatherManager()
     var startViewModel: MainViewModel!
-    
-//    var arrayOfWeathers = [Weather]()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-//        let manager = WeatherManager()
-//        manager.getWeather { (weathers) in
-//            for item in weathers {
-//                print("City - \(item.city)")
-//            }
-//        }
-        
+ 
         self.startViewModel = MainViewModel(weatherManager: weatherManager)
         if let startController = self.window?.rootViewController as? MainViewController {
             startController.viewModel = startViewModel
         }
-        
-        
         
         return true
     }

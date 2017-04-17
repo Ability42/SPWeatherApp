@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -18,11 +18,14 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
             viewModel.updateWeather {
                 self.tableView.reloadData()
                 self.activityIndicator.stopAnimating()
+                self.tableView.separatorStyle = .singleLine
             }
         }
     }
     
     let cellIdentifier = "CityTableViewCell"
+    let segueIdenitifer = "ShowDetails"
+
     
     // MARK: View Controller Lifecycle
     
@@ -38,7 +41,7 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 200
         self.tableView.contentInset.top = 20
-        self.tableView.separatorStyle = .none
+//        self.tableView.separatorStyle = .none
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -54,8 +57,21 @@ class MainViewController: UIViewController, UITabBarDelegate, UITableViewDataSou
         return cell!
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let id = segue.identifier, id == segueIdenitifer,
+            let detailsController = segue.destination as? DetailsViewController,
+            let index = sender as? Int {
+            detailsController.viewModel = self.viewModel.detailsViewModel(index: index)
+        }
     }
+    
+   
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        self.performSegue(withIdentifier: segueIdenitifer, sender: indexPath.item)
+    }
+
 }
 
